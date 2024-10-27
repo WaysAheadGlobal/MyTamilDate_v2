@@ -1,0 +1,42 @@
+.profilemaincontainer{
+    width: 100%;
+    margin: auto;
+  }
+
+  .maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    padding-right: 0;
+   padding-left: 0;
+   margin-top: 15px;
+   margin-bottom: 15px;
+  }
+
+
+.innerCircle {
+    border-radius: 9999px;
+    background-color: white;
+    padding: 0.25rem;
+  }
+  .profilepicimg {
+    border-radius: 9999px;
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  .upgradebutton{
+    border: 1px solid #fff;
+    border-radius: 18px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    padding: 12px 10px 12px 10px;
+    margin-top: 15px;
+  }

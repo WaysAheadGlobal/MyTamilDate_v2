@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      background-color: #f7e9ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .card {
+      max-width: 32rem;
+      width: 100%;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-container {
+      text-align: left;
+      margin-bottom: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ff7648;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    .text {
+      color: #4a4a4a;
+      margin-bottom: 1rem;
+    }
+
+    .link {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    .footer {
+      width: 100%;
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 14px;
+      color: #999;
+      max-width: 32rem;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+
+    .footer p:first-child>a {
+      color: #d0a0ff;
+      text-decoration: underline;
+    }
+
+    .footer p>a {
+      color: #c8b0d0;
+      text-decoration: none;
+    }
+
+    .maincontainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .soicalicon{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="maincontainer">
+
+
+      <div class="card">
+        <div class="logo-container">
+          <img width="174x" height="57px"  src="<%= logo %>" alt="myTamilDate Logo" />
+        </div>
+        <h2 class="subtitle">
+          Verify your email to access your myTamilDate account
+        </h2>
+        <p class="text">Hello,</p>
+        <p class="text">
+          Follow this link to <a href="<%= link %>" class="link">verify your email address</a>
+        </p>
+        <p class="text">Thanks!</p>
+        <p class="text">Your myTamilDate team</p>
+        <!-- <div class="footer">
+          <p><a href="https://mytamildate.waysdatalabs.com/unsubscribe">Unsubscribe</a></p>
+          <p class="soicalicon">
+
+            <a href="https://www.facebook.com/mytamildate/" style="margin-right: 1rem;">
+
+              <img height="24px" width="24px" src="<%= facebook %>" alt="facebook" />
+
+            </a>
+
+            <a href="https://www.instagram.com/mytamildate/?hl=en">
+            
+              <img height="24px" width="24px" src="<%= instagram %>" alt="instagram" />
+
+            </a>
+
+          </p>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

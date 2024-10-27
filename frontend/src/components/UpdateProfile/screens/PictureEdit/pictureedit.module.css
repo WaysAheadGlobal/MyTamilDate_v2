@@ -1,0 +1,196 @@
+.maincontainer{
+    width: 95%;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 10px;
+}
+
+.underreview{
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.componentname{
+   
+font-size: 24px;
+font-weight: 500;
+line-height: 31.2px;
+text-align: center;
+color: #515151;
+
+}
+
+
+.whyInfo {
+    max-width: 286px;
+    background: #f7ecff;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 12;
+    position: absolute;
+    top: 30px;
+    margin-right: 50px;
+    /* Adjust to position correctly below the "About me" */
+    transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.whyInfo p {
+    font-family: Poppins;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #515151;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 0;
+}
+
+.show {
+    opacity: 1;
+    height: auto;
+    /* Auto height when shown */
+}
+
+.hide {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+.container {
+    position: relative;
+  }
+  
+  .componentname {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .whyInfo {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .mainpic {
+    position: relative;
+  
+  }
+  
+  .mainpic img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    max-height: 240px;
+    border-radius: 12px;
+  }
+  
+  .twopiccontainer {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .restpicture {
+    flex: 1;
+    position: relative;
+  }
+  
+  .restpicture img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .icons {
+    position: absolute;
+    bottom: 5px; /* Position at the bottom */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 8px; /* Horizontal padding */
+  }
+  
+  
+  .iconLeft {
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    color: white;
+  }
+  
+  .iconRight {
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+  }
+  
+  .pictype {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    color: #ffffff;
+    width: 90px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    text-align: left;
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    bottom: 8px;  /* Positioning the element 8px from the bottom */
+    left: 8px;    /* Positioning the element 8px from the left */
+  }
+  
+  .twopiccontainerupdate{
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 10px;
+    
+    
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-auto-flow: column; /* Arrange items in a single row */
+    width: 100%;
+    grid-gap: 10px; /* Space between grid items */
+  }
+  
+  .gridItem {
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the background image */
+    border-radius: 16px; /* Rounded corners */
+    position: relative; /* To position icons inside */
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .primary {
+    grid-template-rows: 160px; /* Grid row height for primary type */
+  
+    @media (min-width: 426px) {
+      grid-template-rows: 260px; /* Grid row height for primary type on larger screens */
+    }
+  }
+  
+  .secondary {
+    grid-template-rows: 120px; /* Grid row height for secondary type */
+  
+    @media (min-width: 426px) {
+      grid-template-rows: 220px; /* Grid row height for secondary type on larger screens */
+    }
+  }

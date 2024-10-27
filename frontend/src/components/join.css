@@ -1,0 +1,181 @@
+.future-hero {
+  background-image: url("../assets/images/join-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 517px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-position: center;
+  justify-content: flex-end;
+  margin-top: 80px;
+  padding-bottom: 50px;
+  align-items: center;
+}
+
+.future-header-text {
+  display: flex;
+
+  width: 100%;
+  z-index: 9;
+  height: content-fit;
+
+  /* margin-top:-40px; */
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-top: 30px;
+
+
+
+
+}
+
+.future-hero-text {
+  color: #ffffff;
+  z-index: 9;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+
+  gap: 20px;
+  width: 90%;
+  /* margin-left:80px;
+   margin-right:50px; */
+}
+
+
+
+.future-first-line {
+  font-family: "Poppins";
+
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.future-sec-line {
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.006em;
+  text-align: left;
+
+
+  color: #FFFFFF;
+
+
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .future-sec-line {
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: "Inter";
+
+  }
+
+  .future-first-line {
+
+
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 60px;
+    font-family: "Poppins";
+
+
+  }
+
+
+
+}
+
+.future-get-started {
+
+  background: #FFFFFF;
+
+  margin-top: 20px;
+  color:
+    #4B164C;
+
+
+
+
+
+  max-width: 320px;
+  width: 100%;
+  height: 68px;
+
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  border: none;
+  border-radius: 64px;
+  margin-top: 30px;
+
+
+  /* margin-top:50px; */
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 750px) {
+
+  .future-hero-text {
+
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .future-get-started {
+
+
+
+
+    width: 100%;
+    max-width: 250px;
+    height: 48px;
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16.8px;
+    letter-spacing: 0.02em;
+
+
+  }
+
+  .future-header-text {
+    align-items: center;
+  }
+
+  .future-first-line {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .future-hero {
+    background: linear-gradient(90deg, #9663BF -58.54%, rgba(150, 99, 191, 0) 100%), url("../assets/images/st5.png");
+    background-size: cover; /* This ensures the background image covers the element */
+  }
+  
+
+}

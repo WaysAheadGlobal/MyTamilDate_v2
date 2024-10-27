@@ -1,0 +1,131 @@
+.selectWrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.formSelectCurrency {
+  width: 100%;
+  appearance: none;
+  padding-right: 2.5em; /* Make space for the icon */
+  text-align: center; /* Center align text */
+}
+
+.dropdownIcon {
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensure the icon doesn't block clicks */
+  font-size: 1.5em; /* Adjust the size if necessary */
+}
+
+.carouselItem {
+  padding: 15px;
+  cursor: -webkit-grabbing;
+}
+
+.carouselItem img {
+  border-radius: 12px;
+  transition: 1s linear;
+  width: 100%; /* Make the images responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 375px; 
+  max-height: 285px; /* Maximum height for the images */
+}
+.carouselImage{
+  width: 100%; 
+  min-width: 350px; 
+  max-height: 230px;
+
+  border-radius: 16px;
+}
+
+
+.carouselItem:hover img {
+  transform: translateY(-1%);
+}
+
+.carousel-indicators li {
+  list-style: none !important;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #c31111;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  top: 30px;
+}
+
+.carousel-indicators li.active {
+  background-color: #ab1616 !important;
+}
+
+.carouselCaption {
+  position: absolute;
+    bottom: 16px;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    left: 50%;
+    width: 100%;
+    text-align: left;
+    padding-left: 6%;
+    padding-right: 6%;
+    height: 165px;
+    margin-bottom: -16px;
+    border-radius: 16px;
+    background: linear-gradient(359.68deg, rgba(5, 5, 5, 0.85) -1.23%, rgba(0, 0, 0, 0.6) 51.72%, rgba(0, 0, 0, 0) 95.95%);
+    
+}
+
+.carouselCaption h5 {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.carouselCaption p {
+  font-size: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.carouselCaption li {
+  font-size: 12px;
+  margin-bottom: 0.5rem;
+  text-align: justify;
+}
+
+.carouselIndicators {
+  position: relative;
+  bottom: -20px;
+  display: flex;
+  justify-content: center;
+}
+
+.carouselIndicators li {
+  background-color: gray;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+}
+
+.carouselContainer {
+  width: 100%; /* Default width for small screens */
+  max-width: 350px; /* Maximum width */
+  margin: auto; /* Center align */
+ 
+
+}
+.bigcontainer{
+ 
+  background: linear-gradient(180deg,rgba(252, 140, 102, 0.6) 4.74%,  rgba(255, 235, 228, 0.6) 29.74%,rgba(255, 255, 255, 0.6) 104.74% );
+
+}
+
+@media only screen and (max-width: 650px) {
+  .carouselItem img {
+    height: auto;
+  }
+}

@@ -1,0 +1,140 @@
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    max-height: 100dvh;
+    height: 100dvh;
+}
+
+.chatHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: #f7ecff;
+
+    img {
+        border-radius: 9999px;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+    }
+
+    p {
+        font-weight: 600;
+    }
+}
+
+.chatContainer {
+    flex-grow: 1;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    padding: 1rem 3rem;
+    scroll-behavior: smooth;
+}
+
+.chatInput {
+    display: flex;
+    gap: 1rem;
+    border-radius: 9999px;
+    border: 1px solid black;
+    overflow: hidden;
+    margin-inline: 2rem;
+    margin-bottom: 2rem;
+    min-height: 60px;
+
+    input {
+        flex-grow: 1;
+        border: none;
+        padding: 1rem;
+        outline: none;
+        width: 100%;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        padding: 1rem;
+        color: #4e1173;
+        font-weight: 600;
+    }
+}
+
+.date {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+
+    p {
+        color: #6c6c6c;
+        font-weight: 600;
+    }
+
+    hr {
+        flex-grow: 1;
+        border: none;
+        border-top: 2px solid #6c6c6c;
+    }
+}
+
+.message {
+    margin-bottom: 1rem;
+    width: fit-content;
+    padding: 10px 15px;
+    border-radius: 12px;
+    background-color: #e8ebf0;
+    min-width: 5em;
+}
+
+.message>div>p:last-child {
+    font-size: smaller;
+    margin-left: auto;
+    width: fit-content;
+}
+
+.message:has(.you) {
+    margin-left: auto;
+    color: white;
+    background: #824D96;
+
+
+    &>div>p:last-child {
+        color: white;
+    }
+}
+
+.message:has(.other) {
+    margin-left: 2.25rem;
+}
+
+.message:has(.other)+img {
+    border-radius: 9999px;
+    width: 40px;
+    height: 40px;
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .chatbox {
+        height: 100dvh;
+    }
+
+    .chatHeader {
+        padding: 1rem;
+    }
+
+    .chatContainer {
+        padding: 1rem;
+    }
+
+    .chatInput {
+        margin-inline: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .message {
+        padding: 10px;
+    }  
+}

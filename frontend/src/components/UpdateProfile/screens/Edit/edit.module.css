@@ -1,0 +1,180 @@
+.aboutme {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    /* To position the tooltip correctly */
+}
+
+.aboutme p {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23.4px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #515151;
+}
+
+.whyInfo {
+    max-width: 286px;
+    background: #f7ecff;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 12;
+    position: absolute;
+    top: 25px;
+    /* Adjust to position correctly below the "About me" */
+    transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.whyInfo p {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #515151;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 0;
+}
+
+.show {
+    opacity: 1;
+    height: auto;
+    /* Auto height when shown */
+}
+
+.hide {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.aboutdetails {
+    margin-top: 30px;
+    border-bottom: 1px solid #E5E5E5;
+    margin-left: 15px;
+    /* Applies the bottom border */
+}
+
+
+.aboutdetails>.aboutquestion {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #515151;
+    margin-bottom: 5px;
+}
+
+.aboutdetails>.aboutanswer {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.2px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #6C6C6C;
+    margin-bottom: 15px;
+
+}
+
+.personalityarray {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* Adjust the gap between tags */
+    justify-content: center;
+    padding: 20px;
+}
+
+.personalityarray .tag {
+    border: 0.8px solid #CCCCCC;
+    font-size: 16px;
+    color: #515151;
+    text-align: center;
+    width: Hug (92px)px;
+    height: Fixed (40px)px;
+    padding: 8px 12px 8px 12px;
+    gap: 10px;
+    border-radius: 34px;
+}
+
+.upgradebutton{
+width: 100%;
+padding: 10px 14px 10px 14px;
+height: 52px;
+gap: 12px;
+border-radius: 34px;
+background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+color:#FFFFFF;
+font-size: 16px;
+font-weight: 600;
+line-height: 20.8px;
+letter-spacing: 0.04em;
+text-align: center;
+border: none;
+
+}
+
+.buttoncontainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap between buttons */
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+         padding: 10px 12px 10px 12px;
+   gap: 2px;
+    border-radius: 34px ;
+font-size: 16px;
+font-weight: 500;
+line-height: 20.8px;
+letter-spacing: 0.04em;
+text-align: center;
+background: #F7ECFF;
+width: 50%;
+Font : Poppins;
+color : 515151;
+height: 52px;
+}
+
+.button:hover {
+    cursor: pointer; 
+  }
+
+.button img {
+  width: 20px; /* Adjust icon size */
+  height: 20px; /* Adjust icon size */
+}
+.buttonlarge:hover {
+    cursor: pointer; 
+  }
+
+.buttonlarge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       padding: 8px 10px 8px 10px;
+    gap: 2px;
+    border-radius: 34px ;
+font-size: 16px;
+font-weight: 500;
+line-height: 20.8px;
+letter-spacing: 0.04em;
+text-align: center;
+background: #F7ECFF;
+  flex-basis: 100%;
+  margin-top: 7px;
+  color: 515151;
+  height: 52px;
+}

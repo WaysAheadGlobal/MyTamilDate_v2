@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poly:ital@0;1&display=swap');
+
+html,
+body,
+#root,
+.app,
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  hyphens: none !important
+}
+
+.container {
+  --bs-gutter-x: 0.5rem;
+}
+
+.app {
+  display: flex;
+  position: relative;
+}
+
+:root {
+  --font-size-24: 24px;
+  --modal-font-size-16 : 16px;
+  --modal-line-height-24 : 24px;
+}
+
+
+p {
+  hyphens: none;
+}
+
+.global-cancel-button {
+  width: 122px;
+  padding: 12px 32px 12px 32px;
+  gap: 10px;
+  border-radius: 42px;
+  border: 1px solid;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #6C6C6C;
+}
+
+.global-save-button {
+  width: 122px;
+  padding: 12px 32px 12px 32px;
+  gap: 10px;
+  border-radius: 42px;
+  border: 1px solid;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.global-red-cencel-button{
+  width: 122px;
+  padding: 12px 32px 12px 32px;
+  gap: 10px;
+  border-radius: 42px;
+  border: 1px solid;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #6C6C6C;
+}
+
+
+/* .global-red-cencel-button {
+  width: Fixed (122px)px;
+  height: Hug (48px)px;
+  top: 404px;
+  left: 38px;
+  padding: 12px 32px 12px 32px;
+  gap: 10px;
+  border-radius: 36px;
+  border: 1px solid #F76A7B;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #F76A7B;
+  background-color: #fff;
+
+} */
+
+.global-next-btn {
+  height: 48px;
+  width: 236px;
+  background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+  box-shadow: 0px 4px 10px 0px #00000029;
+  color: #FFFFFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  align-items: center;
+  border: none;
+  border-radius: 42px;
+  padding: 12px 32px 12px 32px;
+  gap: 10px;
+}
+
+.global-next-bottom-fix-btn {
+  height: 48px;
+  width: 236px;
+  position: absolute;
+  bottom: 36px;
+  background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+  box-shadow: 0px 4px 10px 0px #00000029;
+  color: #FFFFFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  align-items: center;
+  border: none;
+  border-radius: 42px;
+  padding: 12px 32px 12px 32px;
+  gap: 10px
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(241, 241, 241);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 9999%;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(228, 227, 227);
+}
+
+::-webkit-scrollbar-button {
+  background-color: rgb(241, 241, 241);
+
+}
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+  background: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSJibGFjayIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik00IDE1bDYtNiA2IDYiLz48L3N2Zz4=') center no-repeat;
+  height: 16px;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+  background: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSJibGFjayIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik00IDlsNiA2IDYtNiIvPjwvc3ZnPg==') center no-repeat;
+  height: 16px;
+}

@@ -1,0 +1,55 @@
+.Navbar-container {
+  width: 100%;
+  background-color: #FFFFFF !important;
+  /* position: sticky; */
+  /* position: -webkit-sticky; */
+  top: 0;
+  z-index: 50;
+  display: block;
+  /* background-color: transparent;  */
+}
+
+.nav-link-container {
+  gap: 44px;
+  /* background-color: transparent;  */
+}
+
+.nav-link-container .nav-link {
+  font-family: "Inter";
+  font-size: 18px !important;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #333333;
+}
+
+.Navbar-container .nav-link-container .nav-link.active-link {
+  color: #FC8C66;
+  text-decoration: underline;
+  text-underline-offset: 0.75rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-link-container {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .nav-link-container .nav-link {
+    width: 100%;
+  }
+
+  .nav-link-container .nav-link:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0e0;
+  }
+
+  .Navbar-container .nav-link-container .nav-link.active-link {
+    color: #FC8C66;
+    text-decoration: none;
+  }
+
+ 
+}

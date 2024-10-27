@@ -1,0 +1,144 @@
+.video2-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video2-main p {
+    font-family: "Poppins";
+
+    font-size: 40px;
+    font-weight: 600;
+    /* line-height: 60px;
+    letter-spacing: 0.05em; */
+    text-align: center;
+    color: #4E1173;
+
+
+}
+
+.video2-main span {
+    font-family: "Poppins";
+
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 50.4px;
+    text-align: left;
+    color: #515151;
+}
+
+.video2-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 40px;
+}
+
+.vid2 {
+    max-width: 450px;
+    width: 100%;
+    height: 690.77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 56px;
+    padding: 10px;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+}
+
+.vid2:nth-child(2) {
+    margin-inline: -9rem;
+}
+
+.vid2:not(.active) {
+    transform: scale(0.8);
+    z-index: 1;
+}
+
+.video2-img {
+    box-shadow: 0px 4px 50px 0px #00000017;
+
+    max-width: 355.82px;
+    width: 100%;
+    height: 690.77px;
+    box-shadow: 0px 4px 50px 0px #00000017;
+    border-radius: 56px;
+    border: 15px solid #FFFFFF;
+    transition: transform 0.6s ease-in-out;
+}
+
+.controls {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.controls>div {
+    width: 1rem;
+    height: 1rem;
+    background: #D9D9D9;
+    border-radius: 9999px;
+    transition: width 0.3s linear 0.01s;
+}
+
+.controls>div.active {
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    width: 2.5rem;
+}
+
+.video2-img:hover {
+    transform: scale(1.08);
+}
+
+.play-icon {
+    background-image: url("../assets/images/play.png");
+    width: 106px;
+    height: 106px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 750px) {
+    .video2-main p {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .vid2 {
+        img {
+            object-fit: cover;
+            width: 16rem;
+            height: 545px;
+        }
+    }
+
+    .vid2:nth-child(2) {
+        margin-inline: -12rem;
+    }
+
+    .video2-main span {
+
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 550;
+    }
+
+    .video2-content{
+          display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 0px;
+    }
+
+
+}

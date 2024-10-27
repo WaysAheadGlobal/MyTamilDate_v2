@@ -1,0 +1,44 @@
+.helpSupportSection {
+    padding: 20px;
+  }
+
+  .helpSupportTitle {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 33.6px;
+    text-align: center;
+    color: #515151;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 182px
+  }
+  
+  .accordionItemContent {
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between
+  }
+  
+
+  /* .accordion-flush .accordion-collapse {
+    border-top: 1px solid #ddd;
+  } */
+
+
+
+.logoarrow{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    background-color: white;
+    position: sticky;
+}
+
+
+
+
+  

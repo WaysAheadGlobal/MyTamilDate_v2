@@ -1,0 +1,295 @@
+.entercode-container
+{
+display: flex;
+
+
+
+
+justify-content:space-between;
+position: relative;
+
+}
+.entercode-bg
+{
+
+    width: 100%;
+
+       
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+   
+}
+.responsive-bg
+{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.entercode-main
+{
+    width:100%
+}
+.entercode-box
+{
+    background: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+/* justify-content: space-evenly; */
+gap:24px;
+align-items: center;
+height: 100dvh;
+width:85%;
+
+}
+.logo-progressbar2
+{
+    margin-top: 50px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.logo-arrow2
+{
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 0px;
+   
+    height: 57px;
+    position: relative;
+
+
+}
+.logo{
+
+    position: absolute;
+    left: 50%;
+      transform: translate(-50%);
+    
+    }
+
+
+    
+
+.entercode-text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:24px;
+    
+}
+.entercode-details
+{
+    display: flex;
+    flex-direction: column;
+   height: 100dvh;
+
+}
+.entercode-content
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding-bottom: 36px;
+}
+.entercode-form
+{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction:column ;
+    padding-bottom:24px;
+
+height: 100%; */
+
+display: flex;
+    flex-direction: column;
+   height: 100dvh;
+
+}
+.entercode-lable
+  {
+    font-family: poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 15px;
+
+    
+
+
+    
+  }
+  .entercode-lable span
+  {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    
+color:
+#515151;
+margin-top: 12px;
+padding-top: 12px;
+    
+
+
+    
+  }
+.entercode-form-group
+{
+    width: 100%;  
+
+}
+.entercode-text p
+ {
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28.15px;
+    text-align: center;
+    
+    color: #515151;
+
+  }
+  /* .entercode-text p:last-child {
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+     margin: 0px;
+    color: #515151;
+
+  } */
+
+  
+  
+
+
+.entercode-input
+  {
+    border: 1px solid #6C6C6C;
+    color: #6C6C6C;
+    height:52px;
+    width: 50px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    text-align: center;
+
+}
+
+
+.entercode-input::placeholder
+ {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color:#6C6C6C;
+
+}
+.custom-input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color:#6C6C6C !important;
+  }
+.entercode-input.error {
+    border-color: red;
+  }
+  .error-message
+  {
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 600;
+line-height: 22px;
+text-align: left;
+color: #FF4747 !important;
+
+  }
+  
+
+
+.entercode-input:active
+{
+
+
+}
+.resend-timer
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top:24px ;
+}
+.resend-timer a
+{
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.77px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: 
+    #6C6C6C;
+    
+}
+.resend-timer span
+{
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.77px;
+    letter-spacing: 0.04em;
+    text-align: right;
+    color: 
+    #6C6C6C;
+    
+}
+.entercode-btn
+{
+    height:48px;
+    width:100%;
+    max-width:250px;
+    /* margin-top:110px ; */
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+
+    box-shadow: 0px 4px 10px 0px #00000029;
+    color:#FFFFFF;
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0.06em;
+text-align: center;
+
+align-items: center;
+border: none;
+border-radius: 42px;
+}
+
+@media only screen and (max-width:750px){
+.entercode-bg
+{
+    display:none;
+}
+.entercode-box
+{
+width: 100%;
+}
+}

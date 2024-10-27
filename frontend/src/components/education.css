@@ -1,0 +1,267 @@
+.education-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+
+}
+
+.education-bg {
+
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.education-main {
+    /* background: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+
+gap:24px;
+align-items: center; */
+
+
+
+}
+
+.education-content {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    height: 100dvh;
+    width: 85%;
+}
+
+.logo {
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.logo-progressbar9 {
+    margin-top: 50px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-arrow9 {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 0px;
+
+    height: 57px;
+    position: relative;
+
+
+}
+
+
+.track-btn9 {
+    width: 100%;
+    height: 6px;
+    background: #D9D9D9;
+    border-radius: 4px;
+    padding: 0px;
+
+
+}
+
+.track-btn9 div {
+    width: 90%;
+
+    box-shadow: 0px 4px 4px 0px #82828240;
+    height: 100%;
+    border-radius: 4px;
+
+    background: #4e1173 !important;
+}
+
+.education-text {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.education-text p {
+
+    font-family: Poppins;
+    font-size: var(--font-size-24);
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: #515151;
+    margin-bottom: 0px;
+
+}
+
+
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.all-education {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.outer-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 12px;
+}
+
+.first-div {
+    width: 100%;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-div {
+    width: 100%;
+
+
+    /* margin: 5px 2.5%;  */
+    padding: 12px;
+
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    border: 1px solid #CCCCCC;
+    /* Add border for clarity */
+    border-radius: 34px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #6C6C6C;
+    height: 52px;
+}
+
+.inner-div {
+    display: flex;
+
+    gap: 12px;
+
+
+}
+
+.sub-inner-div {
+    /* height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #6C6C6C;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width:45dvh; */
+
+
+    width: 47%;
+    /* Adjust to make two columns */
+   
+    padding: 12px;
+    /* width: fit-content; */
+    cursor: pointer;
+    white-space: nowrap;
+    text-align: center;
+    border: 1px solid #CCCCCC;
+    /* Add border for clarity */
+    border-radius: 34px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #6C6C6C;
+    height: 52px;
+
+
+
+
+}
+
+.sub-inner-div:hover {
+    background-color: #f0f0f0;
+}
+
+.second-div:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+.education-nxt-btn {
+    height: 48px;
+    width: 100%;
+    max-width: 250px;
+    position: absolute;
+    bottom: 36px;
+    margin-top: 20px;
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+
+    box-shadow: 0px 4px 10px 0px #00000029;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+
+
+    text-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 42px;
+
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:750px) {
+    .education-bg {
+        display: none;
+    }
+
+    .education-content {
+        width: 100%;
+    }
+}

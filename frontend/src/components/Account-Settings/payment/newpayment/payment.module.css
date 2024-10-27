@@ -1,0 +1,508 @@
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.plandetails {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carddetails {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 25px;
+    overflow: auto;
+    /* Enable scrolling */
+    height: 100%;
+    /* Ensure it takes the full height available */
+}
+
+.sideimage {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    height: 100vh;
+}
+
+.formSelectCurrency {
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    color: #F76A7B;
+    font-size: 16px;
+    text-align: center;
+    appearance: none;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    border: 1px solid #F76A7B;
+    box-shadow:
+        0px 2.09px 4.19px 0px #0000001A,
+        0px 6.98px 6.98px 0px #00000017,
+        0px 16.06px 9.77px 0px #0000000D,
+        0px 28.62px 11.17px 0px #00000003,
+        0px 44.68px 12.57px 0px #00000000;
+    margin-bottom: 20px;
+}
+
+
+.selectWrapper {
+    position: relative;
+    width: 84px;
+
+}
+
+.dropdownIcon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: rgb(250, 250, 250);
+    font-size: 20px;
+}
+
+.currencyselected {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+
+
+
+}
+
+.formSelectCurrency option {
+    background: white;
+    color: black;
+    text-align: center;
+}
+
+.formSelectCurrency select::-ms-expand {
+    display: none;
+
+}
+
+.formSelectCurrency option {
+    padding: 10px;
+}
+
+.formSelectCurrency option:hover {
+    background-color: #F76A7B;
+    color: white;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 36px;
+    margin: auto;
+}
+
+.continuebutton {
+    width: 251px;
+    height: 45px;
+    padding: 12px 16px;
+    gap: 10px;
+    border-radius: 36px;
+    border: 0.4px solid;
+    border-image-source: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    color: white;
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pricingCard {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    width: 224px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #F06C0D;
+}
+
+.selectedCard {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.02);
+    /* z-index: 1; */
+}
+
+.cardBody {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardBodypopular {
+    padding: 10px;
+}
+
+.cardTitle {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    color: #FC8C66;
+
+}
+
+.cardPrice {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.13px;
+    letter-spacing: 0.04em;
+    color: #515151;
+}
+
+.cardPrice span {
+    font-size: 0.5em;
+}
+
+.cardText {
+    margin-top: 40px;
+}
+
+.mostPopular {
+    background: linear-gradient(0deg, #F76A7B 0%, #FC8C66 100%);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px 10px 0 0;
+    transform: translateX(-50%);
+    width: 224px;
+    margin-left: 50%;
+}
+
+.dotContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.activeDot {
+    width: 30px;
+    height: 8px;
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    border-radius: 25%;
+}
+
+
+
+
+.backgroundcolor {
+    /* background: linear-gradient(180deg, rgba(247, 106, 123, 0.4) 4.74%, rgba(252, 140, 102, 0.4) 38.07%, rgba(255, 235, 228, 0.4) 71.41%, rgba(255, 255, 255, 0.4) 104.74%); */
+    width: 100%;
+    height: 100%;
+    max-height: 924px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backgroundImage {
+    width: 100vw;
+    height: 100vh;
+    background: url('../../../../assets/images/paymentpic.png') no-repeat center center;
+    background-size: 100% 97%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.sideimage {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.permonth {
+    font-size: 16px;
+}
+
+.savepercentage {
+    background: linear-gradient(180deg, #FC8C66 0%, #F76A7B 100%);
+    color: #fff;
+    font-Size: 12px;
+    padding: 4px 6px 4px 6px;
+    border-Radius: 12px;
+    line-Height: 18px;
+}
+
+.subtotal {
+    font-Size: 16px;
+    color: #6C6C6C;
+    line-Height: 24px;
+    font-Weight: 600;
+    margin-top: 5px
+}
+
+.selectedplandetails {
+    width: 100%;
+    border: 2px solid #F06C0D;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:
+        0px 2.09px 4.19px 0px #0000001A,
+        0px 6.98px 6.98px 0px #00000017,
+        0px 16.06px 9.77px 0px #0000000D,
+        0px 28.62px 11.17px 0px #00000003,
+        0px 44.68px 12.57px 0px #00000000;
+    /* Combined all box-shadows into a single declaration */
+}
+
+.selectedplandetails p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.finalsubtotal {
+    margin-top: 20px;
+
+}
+
+.redeempromocode {
+    width: 100%;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+        0px 2.09px 4.19px 0px #0000001A,
+        0px 6.98px 6.98px 0px #00000017,
+        0px 16.06px 9.77px 0px #0000000D,
+        0px 28.62px 11.17px 0px #00000003,
+        0px 44.68px 12.57px 0px #00000000;
+    /* Combined all box-shadows into a single declaration */
+}
+
+.redeempromocode p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.fillcarddetails {
+
+    border: 0.4px solid #60605F;
+    border-radius: 8px;
+}
+
+.formContainer {
+    width: 90%;
+    margin: auto;
+
+
+}
+
+.form-control {
+    border: 1px solid #6C6C6C
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.termandconditons {
+    /* color: linear-gradient(90deg, #9663BF 0%, #4B164C 100%); */
+    color: rgb(84, 15, 84);
+    font-weight: 500;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.detailandclear {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clearformdata {
+    padding: 6px 16px 6px 16px;
+    gap: 5px;
+    border-radius: 20px;
+    border: 1px solid #6C6C6C
+}
+
+.formGroup label {
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    color: #515151;
+    margin-bottom: 5px;
+}
+
+
+.subscribeButtonContainer {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    margin-top: 20px;
+    /* Add some top margin for spacing */
+    margin-bottom: 20px;
+}
+
+
+.subscribeButtonn {
+    width: 236px;
+    padding: 12px 32px 12px 32px;
+    gap: 10px;
+    border-radius: 36px;
+    border: none;
+    color: white;
+    left: 50%;
+    background-color: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+}
+
+
+
+.inputField {
+    border: 1px solid #F97E0D
+}
+
+.Recurringbilling {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    color: #515151;
+    margin-top: 15px;
+}
+
+.textmuted {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #6C6C6C;
+    text-align: center;
+}
+
+.text-muted {
+    font-size: 0.9rem;
+}
+
+.text-muted a {
+    color: #ff7f7f;
+}
+
+.text-muted a:hover {
+    color: #ff4f4f;
+}
+
+p.small {
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+
+
+    .maincontainer {
+        justify-content: space-around;
+    }
+
+    .plandetails {
+        width: 100%;
+        /* margin-top: 20px; */
+    }
+
+    .carddetails {
+        width: 100%;
+        overflow: visible;
+    }
+
+    .sideimage {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1024px) {
+    .sideimage {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:767px) {
+    .maincontainer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .plandetails {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .carddetails {
+        width: 100%;
+        overflow: visible;
+    }
+
+    .sideimage {
+        width: 100%;
+    }
+
+}

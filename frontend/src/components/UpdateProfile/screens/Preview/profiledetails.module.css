@@ -1,0 +1,154 @@
+:root {
+    --drawer-top: 22rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    scrollbar-width: none;
+    width: 100%;
+}
+
+.photoBtn {
+    /* position: absolute;
+    z-index: 100;
+    top: calc(var(--drawer-top) - 2.5rem); */
+    border: none;
+    background: white;
+    border-radius: 9999px;
+    padding: 4px 10px;
+}
+
+.drawer {
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.heading {
+    font-size: large;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.subHeading {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    text-align: justify;
+}
+
+.highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.highlights>span {
+    border: 1px solid #e0e0e0;
+    border-radius: 9999px;
+    padding: 0.5rem 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* .gallery {
+    position: absolute;
+    border: none;
+    padding: 0;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    background-color: #e0e0e0;
+}
+ */
+/* .gallery::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+} */
+
+/* .gallery img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+} */
+
+.interests {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.interests>p {
+    background: #F7ECFF;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+}
+
+.personalities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.personalities>p {
+    border: 2px solid #e0e0e0;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+}
+
+.smokeDrink {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.smokeDrink>div>p:last-child {
+    border: 2px solid #e0e0e0;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    border-radius: 9999px;
+}
+
+/* @media screen and (max-width: 768px) {
+    .gallery {
+        max-width: 100%;
+        width: 90%;
+    }
+} */
+
+.personalityContainer {
+    background-color: #F7ECFF;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    border-radius: 1rem;
+
+    span {
+        position: absolute;
+        background-color: #fdf9fd;
+        border: 1px solid #e0e0e0;
+        align-self: center;
+        padding: 5px 10px;
+        top: -2.5rem;
+        border-radius: 0.5rem;
+        font-size: 14px;
+    }
+
+    p {
+        background-color: #fdf9fd;
+    }
+}

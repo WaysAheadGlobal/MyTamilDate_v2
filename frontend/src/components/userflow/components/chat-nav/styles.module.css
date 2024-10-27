@@ -1,0 +1,24 @@
+.nav {
+    border: 2px solid #e0e0e0;
+    border-radius: 9999px;
+}
+
+.nav>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0.25rem;
+    margin: 0;
+}
+
+.nav>ul>li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 9999px;
+}
+
+.nav>ul>li.active {
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    color: white;
+}

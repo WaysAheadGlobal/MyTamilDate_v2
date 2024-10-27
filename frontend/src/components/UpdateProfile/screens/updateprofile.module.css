@@ -1,0 +1,137 @@
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0;
+   padding-left: 0;
+   margin-left: 24px;
+  }
+  .profilemaincontainer{
+    width: 100%;
+    margin: auto;
+  }
+  .componentname{
+   
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31.2px;
+    text-align: center;
+    color: #515151;
+  }    
+  .imgContainer {
+    border-radius: 9999px;
+    background: conic-gradient(white calc(100% - var(--profile-completed)), #00b007 0%);
+    padding: 0.25rem;
+}
+.innerCircle {
+  border-radius: 9999px;
+  background-color: white;
+  padding: 0.25rem;
+}
+
+.profilepicimg {
+  border-radius: 9999px;
+  width: 100px;
+  height: 100px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  .editpreview {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+  }
+  
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 50%; 
+    text-align: center; 
+    position: relative; 
+  }
+  
+  .active {
+    border-bottom: 2px solid ;
+    border-color: #F76A7B;
+    
+  }
+  /* More specific CSS to override the existing styles */
+.custom-row > * {
+  flex-shrink: initial;
+  width: auto;
+  max-width: none;
+  padding-right: 0;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+.editseditsection{
+  font-family: Poppins;
+font-size: 18px;
+font-weight: 600;
+line-height: 27px;
+text-align: center;
+color: #515151;
+
+}
+
+
+.whyInfo {
+  max-width: 286px;
+  background: #f7ecff;
+  border-radius: 8px;
+  padding: 10px;
+  z-index: 12;
+  position: absolute;
+  top: 50px;
+  margin-right: 50px;
+  /* Adjust to position correctly below the "About me" */
+  transition: opacity 0.3s ease-in-out, height 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.whyInfo p {
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #515151;
+  text-align: justify;
+  text-justify: inter-word;
+  margin-bottom: 0;
+}
+
+.show {
+  opacity: 1;
+  height: auto;
+  /* Auto height when shown */
+}
+
+.hide {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+.container {
+  position: relative;
+}
+
+.componentname {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.whyInfo {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,14 @@
+.button {
+    padding: 1rem 2rem;
+    width: fit-content;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.5rem;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    color: white;
+    font-weight: 600;
+}

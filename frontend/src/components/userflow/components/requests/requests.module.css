@@ -1,0 +1,78 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav>li {
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.nav>li.active {
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+.nav>li.active>.indicator {
+    opacity: 1;
+}
+
+.indicator {
+    opacity: 0;
+    width: 70%;
+    margin-inline: auto;
+    height: 2px;
+    background-color: #f9919a;
+    border-radius: 9999px;
+    margin-top: 0.25rem;
+    transition: 300ms;
+}
+
+.messagesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    margin-bottom: -1.5rem;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.message>img {
+    border-radius: 9999px;
+    aspect-ratio: 1/1;
+    width: 50px;
+}
+
+.message>div>p:first-child {
+    font-weight: 600;
+}
+
+.chatPlaceholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 31.2px;
+    text-align: center;
+}

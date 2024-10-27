@@ -1,0 +1,58 @@
+.chatLayout {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+}
+
+.matchContainer {
+    display: flex;
+    gap: 1.25rem;
+    flex-direction: column;
+    width: 420px;
+    max-width: 420px;
+    max-height: 100dvh;
+    height: 100dvh;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    padding: 2rem;
+    border-right: 2px solid #e0e0e0;
+}
+
+@media screen and (max-width: 900px) {
+    .chatLayout {
+        grid-template-columns: 6rem 1fr;
+    }
+
+    .matchContainer {
+        width: 100%;
+        max-width: 100%;
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .chatLayout {
+        grid-template-columns: 1fr;
+    }
+
+    .matchContainer {
+        padding: 1rem;
+    }
+}
+
+.matchBox {
+    display: flex;
+}
+
+.chatBox {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .matchBox {
+        display: flex;
+    }
+
+    .chatBox {
+        display: none;
+    }
+}

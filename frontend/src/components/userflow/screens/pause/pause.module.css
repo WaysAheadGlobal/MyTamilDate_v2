@@ -1,0 +1,44 @@
+.unpausebutton {
+    height: 48px;
+    padding: 12px 32px;
+    gap: 10px;
+    border-radius: 36px;
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    border: none;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  .pausetext {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
+    color: #515151;
+    margin-top: 20px;
+  }
+
+    .logo {
+
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    
+    }
+   
+
+  .alldetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;  
+  }
+  

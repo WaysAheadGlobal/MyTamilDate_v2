@@ -1,0 +1,31 @@
+.headinglable{
+    font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+text-align: center;
+
+}
+.detailstext{
+    font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0.04em;
+text-align: center;
+
+}
+.likebox{
+    background: linear-gradient(180deg, rgba(227, 193, 255, 0) 0%, rgba(227, 193, 255, 0) 18.86%, #4B164C 94%);
+    padding-bottom: 20px;
+    border-Radius: 1rem,
+}
+
+ .modal-content {
+  padding: 0px;
+  background-color: red;
+  }
+
+  .upgradeModal{
+   margin-top: -80px;
+  }

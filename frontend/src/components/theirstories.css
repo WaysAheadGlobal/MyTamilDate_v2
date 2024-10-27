@@ -1,0 +1,199 @@
+/* theirstories.css */
+
+.story-main {
+    padding-top: 30px;
+    background: #FAF4FF;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    /* Add a border to debug visibility */
+    /* border: 1px solid red; */
+}
+
+.story-row {
+    justify-content: center;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+}
+
+.story-col {
+    justify-content: center;
+    display: flex;
+    gap: 0px;
+    margin-top: 25px;
+    width: 30%;
+    /* Remove opacity for visibility debugging */
+    opacity: 1;
+}
+
+.story-heading {
+    font-family: "Poppins";
+    
+    font-size: 40px;
+    font-weight: 600;
+    /* line-height: 72px;
+    letter-spacing: 0.05em; */
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+.story-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.story-content {
+    padding: 0px;
+}
+
+.story-item {
+    position: relative;
+    width: 100%;
+    align-items: center;
+    height: 600px;
+}
+
+.story-detail {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 30%;
+    width: 85%;
+    padding: 12px;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 0px #00000033;
+    background-color: #FFFFFF;
+    z-index: 15;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    /* Remove opacity for visibility debugging */
+}
+
+.story-image {
+    border-radius: 12px;
+    max-width: 400px;
+    width: 100%;
+    height: 461px;
+    position: absolute;
+    z-index: 12;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.story-title {
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #5E5E5E;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.story-name {
+    font-family: "Inter";
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: left;
+    color: #3A3A3A;
+}
+
+.story-read-more {
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    color: #4B164C;
+    text-decoration: none;
+}
+
+.more-success-btn {
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    max-width: 320px;
+    width: 100%;
+    height: 68px;
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    border: none;
+    border-radius: 64px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 750px) {
+    .story-heading {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+
+    .story-content {
+        padding: 0px;
+    }
+
+    .story-row {
+        padding: 0px;
+        gap: 0px;
+    }
+
+    .story-col {
+        width: 80%;
+    }
+
+    .story-image {
+        height: auto;
+    }
+
+    .story-item {
+        height: 500px;
+    }
+
+    .more-success-btn {
+
+
+        width: 100%;
+        height: 48px;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16.8px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        max-width: 250px;
+
+    }
+
+    .person-name {
+        font-size: 24px !important;
+    }
+
+    .person-title {
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .story-col {
+        width: 90%;
+    }
+}

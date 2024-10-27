@@ -1,0 +1,148 @@
+.policy-main
+{
+    display: flex;
+    flex-direction: column;
+    /* padding:120px;
+    padding-right:120px; */
+width: 85%;
+/* justify-content: center; */
+/* align-items: center; */
+margin-top: 50px;
+}
+.policy-main p
+{
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    
+    
+    text-align: justify;
+    color:#5E5E5E;
+}
+/* .policy-main ul li {
+    font-family: "Inter" !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: 24px !important;
+    text-align: justify !important;
+    color: #5E5E5E !important;
+} */
+
+.policy-main a
+{
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    
+    
+    text-align: justify;
+    color:#5E5E5E;
+}
+.policy-main h4
+{
+    font-family: "Inter";
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+text-align:left;
+
+
+
+}
+.policy-main span
+{
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color:#5E5E5E;
+    padding-bottom: 16px;
+
+}
+.policy-main h1
+{
+ 
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color:#3A3A3A;
+padding-bottom:40px ;
+
+}
+.policy-main ul li
+{
+ 
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    
+    
+    text-align: justify;
+    color:#5E5E5E;
+
+}
+.policy-btn
+{
+    max-width: 260px;
+    width: 100%;
+height: 48px;
+
+border-radius: 30px;
+opacity: 0px;
+background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+border:none;
+color:#FFFFFF;
+box-shadow: 0px 4px 4px 0px #00000040;
+font-family: "Inter";
+font-size: 22px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0.006em;
+text-align: center;
+margin-top: 50px;
+
+}
+.policy-btn-box
+{
+    display: flex;
+align-items: center;
+
+justify-content: center;
+}
+.policy-checkbox-box
+{
+    display: flex;
+    align-items: center;
+    font-family: "Inter";
+font-size: 20px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+gap:8px;
+color: #5E5E5E;
+padding: 0px;
+margin: 0px;
+width: 100%;
+
+}
+
+
+
+@media (max-width: 750px) {
+    .policy-main
+    {
+        
+        padding:15px;
+        padding-right:15px;
+    width: 100%;
+   
+    
+    }
+    }

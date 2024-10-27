@@ -1,0 +1,137 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.likebox{
+    padding: 1rem;
+    background: linear-gradient(180deg, rgba(227, 193, 255, 0) 0%, rgba(227, 193, 255, 0) 18.86%, #4B164C 94%);
+border-radius: 12px;
+}
+.nav>li {
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: center;
+    transition: 0.5s;
+}
+.upgradebutton{
+    width: 122px;
+ padding: 12px 24px 12px 24px;
+ gap: 10px;
+ border-radius: 42px;
+ border: 1px solid;
+ font-family: 'Poppins', sans-serif;
+ font-size: 16px;
+ font-weight: 600;
+ line-height: 24px;
+ letter-spacing: 0.06em;
+ text-align: center;
+ background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+ color: #fff;
+ cursor: pointer;
+}
+
+.nav>li.active {
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+.nav>li.active>.indicator {
+    opacity: 1;
+}
+
+.indicator {
+    opacity: 0;
+    width: 70%;
+    margin-inline: auto;
+    height: 2px;
+    background-color: #f9919a;
+    border-radius: 9999px;
+    margin-top: 0.25rem;
+    transition: 300ms;
+}
+
+.profiles {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: grid;
+    gap: 1.5rem 1rem;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: max-content;
+    scrollbar-width: thin;
+}
+
+.profiles>div {
+    width: 160px;
+    height: 180px;
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.profiles>div>div {
+    width: 100%;
+    margin-top: auto;
+    background: linear-gradient(360deg, #000000 -5.83%, rgba(0, 0, 0, 0) 100%);
+    padding: 1rem;
+    color: white;
+
+    &>p:first-child {
+        font-weight: 600;
+    }
+
+    &>p:last-child {
+        font-size: smaller;
+    }
+}
+
+.chatPlaceholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 31.2px;
+    text-align: center;
+}
+
+.selected::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background: linear-gradient(180deg, rgba(252, 140, 102, 0.6) -4.17%, rgba(247, 106, 123, 0.6) 110.42%);
+}
+.heading{
+    font-family: Poppins;
+font-size: 16px;
+font-weight: 700;
+line-height: 15.84px;
+text-align: center;
+color: #6C6C6C;
+}
+
+.discriptions{
+font-size: 16px;
+font-weight: 500;
+line-height: 15.84px;
+text-align: center;
+color: #6C6C6C;
+margin-top: 10px;
+}
+.upgradesections{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

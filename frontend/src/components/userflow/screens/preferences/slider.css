@@ -1,0 +1,10 @@
+.MuiSlider-track {
+    background-color: #EFEFEF !important;
+
+
+    border: white !important;
+}
+
+.MuiSlider-thumb {
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%) !important;
+}

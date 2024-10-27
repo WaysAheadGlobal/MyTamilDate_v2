@@ -1,0 +1,12 @@
+.alllang {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex-wrap: wrap;
+    max-height: 39dvh;
+    /* Adjust height to show 4 items initially */
+    overflow-y: auto;
+    /* border: 1px solid #6C6C6C; */
+    border-radius: 8px;
+    padding: 10px;
+}

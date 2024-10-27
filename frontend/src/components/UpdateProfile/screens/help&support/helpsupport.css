@@ -1,0 +1,29 @@
+.accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #ff6f61; 
+  }
+  
+  .accordion-button:not(.collapsed)::after {
+    color: white; 
+  }
+  
+  .accordion-button:not(.collapsed) {
+    color: #fff; 
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    border: none;
+    box-shadow: none;
+
+  }
+  .accordion-button::after {
+    color: white; /* Default icon color */
+  }
+  
+  .accordion-button::after {
+    color: white !important; /* Ensure default icon color is white */
+  }
+
+    .accordion-button{
+    border: 2px solid #CCCCCC;
+    margin-bottom:  20px;
+    border-radius: 36px;
+  }

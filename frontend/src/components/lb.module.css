@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+    .mainbox {
+        overflow-y: scroll; /* Enable vertical scrolling */
+        scrollbar-width: none; /* For Firefox */
+        -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+
+        /* Additional styles */
+        height: 100vh; /* Remove this if it causes issues */
+    }
+
+    /* For WebKit-based browsers (e.g., Chrome, Safari) */
+    .mainbox::-webkit-scrollbar {
+        display: none; /* Hide the scrollbar */
+    }
+    html,
+body,
+#root,
+.app,
+.content {
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  hyphens: none !important
+}
+}

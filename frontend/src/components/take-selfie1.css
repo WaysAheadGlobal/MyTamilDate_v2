@@ -1,0 +1,479 @@
+.selfie-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: flex-start;
+
+}
+
+.selfie-bg {
+  background-image: url("../assets/images/signup-bg.jpg");
+  width: 100%;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+
+
+
+
+
+.selfie-main {
+  background: #FFFFFF;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  gap: 24px;
+  align-items: center;
+  height: 100dvh;
+  position: relative;
+
+
+}
+
+.logo {
+
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+
+}
+
+.logo-progressbar6 {
+  margin-top: 50px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-arrow6 {
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px;
+  margin: 0px;
+
+  height: 57px;
+  position: relative;
+
+
+}
+
+
+.track-btn6 {
+  width: 100%;
+  height: 6px;
+  background: #D9D9D9;
+  border-radius: 4px;
+  padding: 0px;
+
+}
+
+.track-btn6 div {
+  width: 50%;
+
+  box-shadow: 0px 4px 4px 0px #82828240;
+  height: 100%;
+  border-radius: 4px;
+  background: #4e1173 !important;
+
+
+}
+
+.selfie-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+
+
+
+}
+
+
+.pic-heading {
+  font-family: Poppins;
+  font-size: var(--font-size-24);
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center;
+
+  color: #515151;
+  margin: 0px;
+}
+
+.selfie-main a {
+
+
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color:
+    #4E1173;
+
+
+
+}
+
+.pic-text {
+
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin: 0px;
+  color: #515151;
+
+
+
+}
+
+.selfie-row2 {
+  display: flex;
+}
+
+.selfie-box2 {
+  display: flex;
+}
+
+.selfie-adding {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 95%;
+}
+
+.selfie-box1 {
+  /* max-width: 335px; */
+
+  width: 100%;
+  padding: 0px;
+  border-radius: 12px;
+  background: #F5F5F5;
+  height: 15dvh;
+  /* height:40dvh; */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #E5E5E5;
+  gap: 11px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.user-picture1 {
+  height: 15dvh;
+  width: 100%;
+  border-radius: 12px;
+
+}
+
+.selfie-row2 {
+  /* gap:12px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.selfie-box2 {
+
+  width: 49%;
+  padding: 0px;
+  border-radius: 12px;
+  background: #F5F5F5;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #E5E5E5;
+  gap: 11px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.selfie-box2 span {
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color:
+    #6C6C6C;
+
+}
+
+.selfie-box1 span {
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color:
+    #6C6C6C;
+
+}
+
+.user-picture2 {
+  height: 10dvh;
+  width: 100%;
+  border-radius: 12px;
+
+}
+
+
+.selfie-box span {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: #6C6C6C;
+}
+
+.added-selfie {
+  max-width: 223px;
+  max-height: 313px;
+  height: 100%;
+  width: 100%;
+  border-radius: 85px;
+}
+
+.add-selfie-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.selfie-modal-body {
+  font-family: Poppins;
+  font-size: var(--modal-font-size-16);
+  font-weight: 500;
+  line-height: var(----modal-line-height-24);
+  text-align: center;
+  color: #515151;
+  height: 249px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.selfie-modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.selfie-modal-btn {
+  border: 1px solid #6C6C6C;
+  box-shadow: 0px 4px 10px 0px #00000029;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  background-color: #FFFFFF;
+  color: #6C6C6C;
+  height: 48px;
+  width: 136px;
+  border-radius: 36px;
+
+}
+
+
+.selfie-next-btn {
+  height: 48px;
+  width: 250%;
+  max-width: 250px;
+  position: absolute;
+  bottom: 35px;
+  margin-top: 20px;
+  /* background: #E5E5E5; */
+
+
+  color: #6C6C6C;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  align-items: center;
+  border: none;
+  border-radius: 42px;
+}
+
+.crop-modal {}
+
+.crop-cancel-btn {
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  background-color: #FFFFFF;
+  color: #6C6C6C;
+  /* height:48px; */
+  /* width:136px; */
+  border: none;
+}
+
+.crop-save-btn {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.06em;
+  background-color: #FFFFFF;
+  color: #FC8C66;
+  /* height:48px; */
+  /* width:136px; */
+  border: none;
+
+
+
+  --bs-btn-active-bg: #FFFFFF;
+  --bs-btn-active-border-color: #FFFFFF;
+}
+
+.crop-modal-body {
+  height: 200px;
+  border: 2px solid #FFFFFF;
+}
+
+.crop-modal-body {}
+
+.crop-modal-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+
+.do-donts-head {
+  border: none;
+}
+
+
+.dos {
+  border: 1px solid #B0ABB5;
+  z-index: 9;
+  padding-top: 28px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  border-radius: 12px;
+  padding-left: 28px;
+
+}
+
+.dos p {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  color: #6C6C6C;
+  hyphens: none;
+}
+
+.dos span {
+  font-family: Poppins;
+  font-size: 14px !important;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: left;
+  color: #515151;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:750px) {
+  .selfie-bg {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-height:750px) {
+  .selfie-box1 {
+
+    min-height: 25dvh;
+
+
+
+
+  }
+
+  .selfie-box2 {
+
+    min-height: 20dvh;
+
+
+
+
+  }
+
+  .user-picture1 {
+    height: 25dvh;
+    width: 100%;
+    border-radius: 12px;
+
+  }
+
+  .user-picture2 {
+    height: 20dvh;
+    width: 100%;
+    border-radius: 12px;
+
+  }
+}

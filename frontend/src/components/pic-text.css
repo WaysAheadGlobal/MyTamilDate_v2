@@ -1,0 +1,194 @@
+.pic-text-main {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.pic1-text1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: 50px;
+    background-size: cover;
+    background-color: #FAF3F0;
+    /* background-image: url(../assets/images/pic-text-bg.png); */
+}
+
+.pic3-text3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    gap: 50px;
+    background-size: cover;
+}
+
+.pic1 {
+    width: 50%;
+}
+
+.text1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+}
+
+.text1 h4 {
+    color: #333333;
+    font-family: "Poppins";
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.discover-love {
+    font-family: "Poppins";
+    font-size: xx-large;
+    font-weight: 600;
+    color: #4E1173;
+}
+
+.abi-john {
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: start;
+    color: #4E1173;
+    display: inline-block;
+    width: fit-content;
+}
+
+.text1 p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: start;
+    color: #5E5E5E;
+    margin-top: 20px;
+}
+
+.view-success-btn {
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    box-shadow: 3px 5px 10px 0px #00000033;
+    font-family: "Inter";
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 320px;
+    width: 100%;
+    height: 68px;
+    border-radius: 36px;
+    border: none;
+    margin-top: 40px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.c1 {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width:1070px) {
+    .pic1-text1 {
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        gap: 0px;
+    }
+
+    .pic3-text3 {
+        flex-direction: column-reverse;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 4px;
+        gap: 0px;
+    }
+
+    .text1 {
+        width: 100%;
+    }
+
+    .text1 p {
+        margin-top: 0px;
+        font-size: 16px;
+    }
+
+    .text1 h4 {
+        font-size: 18px;
+        text-align: left !important;
+        line-height: 30px;
+        margin-top: 15px;
+    }
+
+    .view-success-btn {
+        width: 100%;
+        height: 48px;
+        font-family: "Inter";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16.8px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        max-width: 250px;
+    }
+
+    .discover-love {
+        font-size: 21px;
+    }
+
+    .view-success-btn {}
+
+    .pic1 {
+        margin: 0px;
+        padding: 0px;
+        width: 60%;
+        height: 60%;
+    }
+
+    .c1 {
+        max-width: px;
+        max-height: px;
+        width: 100%;
+        height: 90%;
+    }
+
+    .pic-text-main {
+        display: flex;
+        flex-direction: column;
+        /* margin: 20px auto auto auto; */
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .pic1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .view-success-btn {
+        margin-top: 0px;
+    }
+}

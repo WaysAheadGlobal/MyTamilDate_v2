@@ -1,0 +1,102 @@
+.formContainer {
+    width: 90%;
+    margin: auto;
+    
+ 
+}
+.form-control
+{
+    border: 1px solid #6C6C6C
+}
+a{
+    text-decoration: none;
+  
+}
+.termandconditons{
+    /* color: linear-gradient(90deg, #9663BF 0%, #4B164C 100%); */
+    color: rgb(84, 15, 84);
+    font-weight :500;
+}
+.formGroup {
+    margin-bottom: 15px;
+}
+.detailandclear{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clearformdata{
+    padding: 6px 16px 6px 16px;
+    gap: 5px;
+    border-radius: 20px;
+    border: 1px solid #6C6C6C
+  
+    
+}
+.formGroup label {
+
+font-size: 18px;
+font-weight: 500;
+line-height: 22px;
+text-align: left;
+color: #515151;
+margin-bottom: 20px;
+}
+
+
+.subscribeButtonContainer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin-top: 20px; /* Add some top margin for spacing */
+    margin-bottom: 20px;
+}
+
+
+.subscribeButtonn {
+    width:236px;
+    padding: 12px 32px 12px 32px;
+    gap: 10px;
+    border-radius: 36px;
+    border: none;
+    color: white;
+    left: 50%;
+    background-color: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+}
+
+
+
+.inputField {
+    border: 1px solid #6C6C6C
+}
+.Recurringbilling{
+font-size: 18px;
+font-weight: 500;
+line-height: 22px;
+text-align: center;
+color: #515151;
+margin-top: 15px;
+}
+.textmuted{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #6C6C6C;
+    text-align: center;
+}
+.text-muted {
+    font-size: 0.9rem;
+}
+
+.text-muted a {
+    color: #ff7f7f;
+}
+
+.text-muted a:hover {
+    color: #ff4f4f;
+}
+
+p.small {
+    font-size: 0.8rem;
+}
+

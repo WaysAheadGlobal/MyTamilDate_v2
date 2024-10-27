@@ -1,0 +1,149 @@
+/* .carouselContainer{
+    width: 350px;
+} */
+.editpreview {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 50%; 
+    text-align: center; 
+    position: relative; 
+  }
+  
+  .active {
+    border-bottom: 2px solid ;
+    border-color: #F76A7B;
+    
+  }
+
+  .namelocation{
+    margin-top: 25px;
+  }
+
+
+  .name{
+font-size: 18px;
+font-weight: 500;
+line-height: 23.4px;
+letter-spacing: 0.04em;
+text-align: left;
+color: #515151;
+
+  }
+
+  .location{
+  
+font-size: 16px;
+font-weight: 500;
+line-height: 18.2px;
+text-align: left;
+color: #6C6C6C;
+margin-top: 5px;
+margin-top: 10px;
+
+  }
+
+  .answerdetails{
+  
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: left;
+    color: #6C6C6C;
+    margin-top: 5px;
+    margin-top: 10px;
+    
+      }
+
+  .headingpre{
+font-size: 18px;
+font-weight: 600;
+line-height: 23.4px;
+letter-spacing: 0.04em;
+text-align: left;
+color: #515151;
+
+  }
+
+  .basicsdetailscontainer{
+    margin-top: 25px;
+  
+  }
+  .detailboxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    gap: 6px;
+  }
+
+  .Personality{
+    margin-top: 25px;
+  }
+
+  .Personalityactivist{
+    padding: 16px 20px 16px 20px;
+    border-radius: 34px ;
+    border: 0.8px solid #CCCCCC;
+  }
+
+  .Personalitytext{
+font-size: 14px;
+font-weight: 500;
+line-height: 18.2px;
+letter-spacing: 0.04em;
+text-align: center;
+
+     
+  }
+
+  .carouselContainer {
+    width: 100%; /* Default width for small screens */
+    max-width: 350px; /* Maximum width */
+    margin: auto; /* Center align */
+}
+
+.carouselImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.editseditsection{
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: center;
+  color: #515151;
+}
+
+@media (min-width: 576px) {
+    .carouselContainer {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    .carouselContainer {
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .carouselContainer {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carouselContainer {
+        width: 60%;
+    }
+}

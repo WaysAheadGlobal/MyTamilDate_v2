@@ -1,0 +1,32 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const userprofile_1 = __importDefault(require("./userprofile"));
+const accountSetting_1 = __importDefault(require("./accountSetting"));
+const userflow_1 = __importDefault(require("./userflow"));
+const profileUpdate_1 = __importDefault(require("./profileUpdate"));
+const matches_1 = __importDefault(require("./matches"));
+const chat_1 = __importDefault(require("./chat"));
+const webhook_1 = __importDefault(require("./webhook"));
+const payment_1 = __importDefault(require("./payment"));
+const products_1 = __importDefault(require("./products"));
+const subscription_1 = __importDefault(require("./subscription"));
+const unsubscribe_1 = __importDefault(require("./unsubscribe"));
+const customer = (0, express_1.Router)();
+customer.use("/webhook", (0, express_1.raw)({ type: 'application/json' }), webhook_1.default);
+customer.use((0, express_1.json)({ limit: '15mb' }));
+/* customer.use(verifyUser); */
+customer.use("/users", userprofile_1.default);
+customer.use("/setting", accountSetting_1.default);
+customer.use("/user", userflow_1.default);
+customer.use("/update", profileUpdate_1.default);
+customer.use("/matches", matches_1.default);
+customer.use("/chat", chat_1.default);
+customer.use("/payment", payment_1.default);
+customer.use("/products", products_1.default);
+customer.use("/subscription", subscription_1.default);
+customer.use("/unsubscribe", unsubscribe_1.default);
+exports.default = customer;

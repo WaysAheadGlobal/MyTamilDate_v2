@@ -1,0 +1,83 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav>li {
+    cursor: pointer;
+    flex-grow: 1;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.nav>li.active>p {
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+    color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+
+.nav>li.active>.indicator {
+    opacity: 1;
+}
+
+.indicator {
+    opacity: 0;
+    width: 70%;
+    margin-inline: auto;
+    height: 2px;
+    background-color: #f9919a;
+    border-radius: 9999px;
+    margin-top: 0.25rem;
+    transition: 300ms;
+}
+
+.profiles {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, auto);
+    scrollbar-width: thin;
+}
+
+.profiles>div {
+    width: 160px;
+    height: 180px;
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profiles>div>div {
+    margin-top: auto;
+    background: linear-gradient(360deg, #000000 -5.83%, rgba(0, 0, 0, 0) 100%);
+    padding: 1rem;
+    color: white;
+
+    &>p:first-child {
+        font-weight: 600;
+    }
+
+    &>p:last-child {
+        font-size: smaller;
+    }
+}
+.chatPlaceholder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 31.2px;
+    text-align: center;
+}

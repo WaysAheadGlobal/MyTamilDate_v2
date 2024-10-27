@@ -1,0 +1,337 @@
+:root {
+    --select-options-container-height: 15rem;
+}
+
+.located-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+
+}
+
+.located-bg {
+
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+.located-main {
+    /* background: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+
+gap:24px;
+align-items: center; */
+
+
+
+}
+
+.located-content {
+    background: #FFFFFF;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap: 24px;
+    align-items: center;
+    height: 100dvh;
+    width: 85%;
+}
+
+.logo {
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.logo-progressbar7 {
+    margin-top: 50px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-arrow7 {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 0px;
+
+    height: 57px;
+    position: relative;
+
+
+}
+
+
+.track-btn7 {
+    width: 100%;
+    height: 6px;
+    background: #D9D9D9;
+    border-radius: 4px;
+    padding: 0px;
+
+
+}
+
+.track-btn7 div {
+    width: 70%;
+
+    box-shadow: 0px 4px 4px 0px #82828240;
+    height: 100%;
+    border-radius: 4px;
+
+    background: #4e1173 !important;
+}
+
+.located-text {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+
+}
+
+.located-text p {
+
+    font-family: Poppins;
+    font-size: var(--font-size-24);
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+    color: #515151;
+    margin-bottom: 0px;
+
+}
+
+.located-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.located-country {
+    padding: 0px;
+    border-radius: 8px;
+    border: 1px solid #6C6C6C;
+    transition: max-height 0.3s;
+    max-height: var(--select-options-container-height);
+    overflow: hidden;
+    cursor: pointer;
+
+    svg {
+        transform: rotate(180deg);
+        transition: transform 0.3s;
+    }
+}
+
+.located-country.collasped {
+    max-height: 45px;
+}
+
+.located-country.collasped svg {
+    transform: rotate(0deg);
+}
+
+.located-country input {
+    /* height:35dvh; */
+    padding: 10px 10px 10px 10px;
+    margin: 0px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+
+    color: #6C6C6C;
+}
+
+.located-city input {
+    /* height:35dvh; */
+    padding: 10px 10px 10px 10px;
+    border: none;
+    outline: none;
+    margin: 0px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+
+    color: #6C6C6C;
+
+}
+
+.located-city {
+    padding: 0px;
+    border-radius: 8px;
+    border: 1px solid #6C6C6C;
+    max-height: var(--select-options-container-height);
+    overflow: hidden;
+    transition: max-height 0.3s;
+    cursor: pointer;
+
+    svg {
+        transform: rotate(180deg);
+        transition: transform 0.3s;
+    }
+}
+
+.located-city.collasped svg {
+    transform: rotate(0deg);
+}
+
+.located-city.collasped {
+    max-height: 45px;
+}
+
+
+.scroll-container-vertical {
+    max-height: 20dvh;
+    overflow-y: auto;
+    border-top: 1px solid #6C6C6C;
+
+    /* padding: 10px; */
+}
+
+.scroll-item {
+    padding: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #6C6C6C;
+    scrollbar-width: thin;
+
+}
+
+.scroll-item:hover {
+    background-color: #f0f0f0;
+}
+
+.scroll-item.selected {
+    background-color: #d0d0d0;
+}
+
+.located-nxt-btn {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.located-nxt-btn {
+    height: 48px;
+    width: 100%;
+    max-width: 250px;
+    position: absolute;
+    bottom: 36px;
+    margin-top: 20px;
+    background: linear-gradient(180deg, #FC8C66 -4.17%, #F76A7B 110.42%);
+
+    box-shadow: 0px 4px 10px 0px #00000029;
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.06em;
+
+
+    text-align: center;
+    align-items: center;
+    border: none;
+    border-radius: 42px;
+
+
+}
+
+
+
+
+
+
+.scroll-container-vertical::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 12px;
+    /* Width of the scrollbar */
+}
+
+.scroll-container-vertical::-webkit-scrollbar-thumb {
+    background-color: #888;
+    /* Color of the scrollbar thumb */
+    border-radius: 12px;
+    /* Radius of the scrollbar thumb */
+}
+
+.scroll-container-vertical::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+    /* Color of the scrollbar thumb on hover */
+}
+
+.scroll-container-vertical::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Color of the scrollbar track */
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width:750px) {
+    .located-bg {
+        display: none;
+    }
+
+    .located-content {
+        width: 100%;
+    }
+}

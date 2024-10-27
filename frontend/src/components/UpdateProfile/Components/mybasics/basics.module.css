@@ -1,0 +1,21 @@
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+padding: 10px ;
+gap: 6px;
+border-radius: 34px ;
+border: 0.6px solid #6C6C6C
+}
+
+
+.detail{
+font-size: 14px;
+font-weight: 600;
+line-height: 18.2px;
+letter-spacing: 0.04em;
+text-align: center;
+color: #6C6C6C;
+}
+
+

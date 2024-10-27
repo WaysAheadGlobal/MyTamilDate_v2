@@ -1,0 +1,20 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const users_1 = __importDefault(require("./users"));
+const dashboard_1 = __importDefault(require("./dashboard"));
+const auth_1 = __importDefault(require("./auth"));
+const promotioncode_1 = __importDefault(require("./promotioncode"));
+const reject_1 = __importDefault(require("./reject"));
+const reports_1 = __importDefault(require("./reports"));
+const admin = (0, express_1.Router)();
+admin.use("/users", users_1.default);
+admin.use("/dashboard", dashboard_1.default);
+admin.use("/adminlogin", auth_1.default);
+admin.use("/promotioncode", promotioncode_1.default);
+admin.use("/rejected", reject_1.default);
+admin.use("/report", reports_1.default);
+exports.default = admin;
