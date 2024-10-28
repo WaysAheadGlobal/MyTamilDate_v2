@@ -53,6 +53,9 @@
 }
 
 .aboutdetails {
+    max-width: 100%; /* Ensure it doesn't exceed the parent width */
+    overflow: hidden; /* Hide overflow if necessary */
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflowed text */
     margin-top: 30px;
     border-bottom: 1px solid #E5E5E5;
     margin-left: 15px;
@@ -71,7 +74,7 @@
 }
 
 .aboutdetails>.aboutanswer {
-
+    max-width: 100%;
     font-size: 16px;
     font-weight: 400;
     line-height: 18.2px;
@@ -79,7 +82,8 @@
     text-align: left;
     color: #6C6C6C;
     margin-bottom: 15px;
-
+    overflow-wrap: break-word; /* Break long words if necessary */
+    word-wrap: break-word; /* For older browsers */
 }
 
 .personalityarray {

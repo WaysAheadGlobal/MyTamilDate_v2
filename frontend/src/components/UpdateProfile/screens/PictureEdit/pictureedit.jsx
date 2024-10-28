@@ -222,17 +222,25 @@ const EditPicture = () => {
         body: formData,
         headers: {
           'Authorization': `Bearer ${getCookie('token')}`,
-        }
+        },
       });
-
-      const data = await response.json();
-      setSelectedImages({ main: null, first: null, second: null })
+    
+      const responseText = await response.text(); // Read the response as text
+    
+      if (!response.ok) {
+        console.error('Server error response:', responseText);
+        throw new Error('Server responded with an error.');
+      }
+    
+      const data = JSON.parse(responseText); // Parse the response as JSON
+      setSelectedImages({ main: null, first: null, second: null });
       console.log(data);
     } catch (error) {
       console.error('Error saving images:', error);
     } finally {
       setLoading(false);
     }
+    
   };
 
   const handleNextClickRejectedPending = async () => {
@@ -257,7 +265,6 @@ const EditPicture = () => {
 
     if (mediaid) {
       formData.append('media_id', mediaid);
-
     }
 
     if (type) {
@@ -313,9 +320,9 @@ const EditPicture = () => {
 
 
     setShowCropModal(false);
-    console.log(URL.createObjectURL(selectedImages.main))
-    console.log(URL.createObjectURL(selectedImages.first))
-    console.log(URL.createObjectURL(selectedImages.second))
+    // console.log(URL.createObjectURL(selectedImages.main))
+    // console.log(URL.createObjectURL(selectedImages.first))
+    // console.log(URL.createObjectURL(selectedImages.second))
 
     console.log('Cropped image saved successfully');
 

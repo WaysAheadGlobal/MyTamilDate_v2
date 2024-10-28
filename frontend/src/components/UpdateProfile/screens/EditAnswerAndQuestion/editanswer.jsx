@@ -217,7 +217,7 @@ export default function UpdateAnswers() {
                                                                 lineHeight: "20px",
                                                                 fontWeight: "400",
                                                             }}>
-                                                                {question.answer || answers[index].substring(0, 30) + "..."}
+                                                                {question.answer ? question.answer.substring(0, 100) + "..." : (answers[index].substring(0, 30) + "...")}
                                                             </div>
                                                             <div style={{
                                                                 color: "#6C6C6C",

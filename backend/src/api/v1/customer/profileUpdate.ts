@@ -78,7 +78,16 @@ updateprofile.post("/mediaupdate",
           console.error('Error inserting media:', err);
           return res.status(500).send('Internal Server Error');
         }
-        res.status(200).json({ message: 'Media uploaded successfully' });
+    
+        const updateQuery = 'UPDATE user_profiles SET updated_at = NOW() WHERE user_id = ?';
+        db.query(updateQuery, [userId], (err, updateResults) => {
+          if (err) {
+            console.error('Error updating user:', err);
+            return res.status(500).send('Internal Server Error');
+          }
+
+          res.status(200).json({ message: 'Media uploaded successfully' });
+        });
       });
     })
   }
@@ -647,8 +656,16 @@ updateprofile.post('/answer/:questionId', verifyUser, (req: UserRequest, res: ex
               return res.status(500).json({ message: 'Internal Server Error' });
             });
           }
+          const updateQuery = 'UPDATE user_profiles SET updated_at = NOW() WHERE user_id = ?';
+        db.query(updateQuery, [userId], (err, updateResults) => {
+          if (err) {
+            console.error('Error updating user:', err);
+            return res.status(500).send('Internal Server Error');
+          }
 
           res.status(200).json({ message: 'Answer updated successfully' });
+        });
+         
         });
       });
     });

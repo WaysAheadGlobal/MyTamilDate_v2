@@ -497,7 +497,7 @@ users.get('/approval', (req: AdminRequest, res: Response) => {
         GROUP BY
             up.user_id
         ORDER BY 
-            up.created_at DESC
+            up.updated_at DESC
         LIMIT ? OFFSET ?
     `;
 
