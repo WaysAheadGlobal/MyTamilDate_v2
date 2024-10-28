@@ -889,12 +889,13 @@ const Paymentfinal = () => {
                           <button
                             className="global-next-btn"
                             onClick={handlePayment}
+                            disabled={loading}
                           >
                             {" "}
                             {loading ? "Processing..." : "Continue"}
                           </button>
                         ) : (
-                          <button type="submit" className="global-next-btn">
+                          <button type="submit" className="global-next-btn" disabled={loading}>
                             {" "}
                             {loading ? "Processing..." : "Submit"}
                           </button>
